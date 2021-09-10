@@ -17,7 +17,6 @@ app.listen(HTTP_PORT, () => {
     console.log("Server running on port %PORT%".replace("%PORT%",HTTP_PORT))
 });
 
-
 // Hämtar alla böcker
 app.get("/api/bok", (req, res, next) => {
     var sql = "select * from bok"
